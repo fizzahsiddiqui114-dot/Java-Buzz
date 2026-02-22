@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Java Buzz - Fresh Coffee & Cozy Moments</title>
+    <meta name="description" content="Java Buzz Coffee Shop - Freshly brewed coffee, delicious menu, cozy environment. Order online now!">
+    <meta name="keywords" content="coffee shop, espresso, latte, cappuccino, online coffee order">
+    <meta name="author" content="Java Buzz">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Java Buzz</h2>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h1>Fresh Coffee. Cozy Vibes.</h1>
+    <p>Experience the perfect blend of taste & comfort.</p>
+    <button onclick="orderNow()">Order Now</button>
+</section>
+
+<section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+        <div class="item">
+            <h3>Espresso</h3>
+            <p>$3</p>
+        </div>
+        <div class="item">
+            <h3>Latte</h3>
+            <p>$4</p>
+        </div>
+        <div class="item">
+            <h3>Cappuccino</h3>
+            <p>$4.5</p>
+        </div>
+        <div class="item">
+            <h3>Mocha</h3>
+            <p>$5</p>
+        </div>
+    </div>
+</section>
+
+<section id="location" class="location">
+    <h2>Visit Us</h2>
+    <p>123 Coffee Street, Karachi</p>
+    <div id="map"></div>
+</section>
+
+<section id="blog" class="blog">
+    <h2>Latest Blogs</h2>
+    <div id="blog-container"></div>
+</section>
+
+<footer>
+    <p>© 2026 Java Buzz Coffee Shop</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
