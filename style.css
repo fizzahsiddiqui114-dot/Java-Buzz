@@ -1,97 +1,379 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f1e6;
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #4b2e2e;
-    padding: 15px 50px;
-    color: white;
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f1e6;
+    color:#333;
+    line-height:1.6;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#4b2e2e;
+    padding:15px 40px;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: white;
+.logo{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+      border: 3px solid #000000; /* white border */
 }
 
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: #6f4e37;
-    color: white;
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:25px;
 }
 
-.hero button {
-    padding: 10px 20px;
-    background: #2e8b57;
-    border: none;
-    color: white;
-    cursor: pointer;
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:.3s;
 }
 
-.menu {
-    padding: 50px;
-    text-align: center;
+.nav-links a:hover{
+    color:#f7c873;
 }
 
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background-image:url("https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    color:white;
 }
 
-.item {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
+.hero-content{
+    background:rgba(0,0,0,.5);
+    padding:40px;
+    border-radius:15px;
 }
 
-.location {
-    padding: 50px;
-    text-align: center;
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
 }
 
-#map {
-    height: 300px;
-    margin-top: 20px;
+.hero p{
+    margin-bottom:25px;
 }
 
-.blog {
-    padding: 50px;
+/* =========================
+   BUTTON
+========================= */
+
+.btn,
+.item button{
+    display:inline-block;
+    background:#2e8b57;
+    color:white;
+    border:none;
+    padding:12px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-#blog-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+.item button:hover,
+.btn:hover{
+    opacity:.9;
 }
 
-.blog-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
+/* =========================
+   WELCOME
+========================= */
+
+.welcome{
+    padding:70px 20px;
+    text-align:center;
 }
 
-footer {
-    background: #4b2e2e;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.welcome h2{
+    margin-bottom:20px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-    }
+/* =========================
+   OFFERS
+========================= */
+
+.offers{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.offer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.offer-card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu-banner{
+    text-align:center;
+    padding:70px 20px;
+    color:white;
+
+    background-image:url("https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg");
+    background-size:cover;
+    background-position:center;
+}
+
+.menu-banner h1{
+    font-size:3rem;
+}
+
+.menu-page{
+    padding:50px;
+}
+
+.coffee-card{
+    display:flex;
+    align-items:center;
+
+    background:white;
+
+    margin-bottom:25px;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.coffee-image{
+    width:45%;
+    height:250px;
+
+    background-size:cover;
+    background-position:center;
+}
+
+.coffee-content{
+    width:35%;
+    padding:25px;
+}
+
+.coffee-price{
+    width:20%;
+    text-align:center;
+}
+
+.coffee-price button{
+    margin-top:10px;
+}
+
+.offers-section{
+    padding:60px 20px;
+    text-align:center;
+}
+/* =========================
+   COFFEE IMAGES
+========================= */
+
+.espresso{
+background-image:url("https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg");
+}
+
+.latte{
+background-image:url("https://images.pexels.com/photos/302897/pexels-photo-302897.jpeg");
+}
+
+.cappuccino{
+background-image:url("https://images.pexels.com/photos/374885/pexels-photo-374885.jpeg");
+}
+
+.mocha{
+background-image:url("https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg");
+}
+
+.americano{
+background-image:url("https://images.pexels.com/photos/851555/pexels-photo-851555.jpeg");
+}
+
+.coldbrew{
+background-image:url("https://images.pexels.com/photos/2074122/pexels-photo-2074122.jpeg");
+}
+
+.macchiato{
+background-image:url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg");
+}
+
+.flatwhite{
+background-image:url("https://images.pexels.com/photos/6207307/pexels-photo-6207307.jpeg");
+}
+
+.affogato{
+background-image:url("https://images.pexels.com/photos/6544370/pexels-photo-6544370.jpeg");
+}
+
+.icedlatte{
+background-image:url("https://images.pexels.com/photos/2615323/pexels-photo-2615323.jpeg");
+}
+
+.caramel{
+background-image:url("https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg");
+}
+
+.vanilla{
+background-image:url("https://images.pexels.com/photos/977876/pexels-photo-977876.jpeg");
+}
+
+/* =========================
+   LOCATION
+========================= */
+
+.location-page{
+    padding:60px 20px;
+    text-align:center;
+}
+
+#map{
+    height:400px;
+    margin-top:25px;
+    border-radius:15px;
+}
+
+.timing-section{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.timing-card{
+    background:white;
+    max-width:600px;
+    margin:auto;
+    padding:25px;
+    border-radius:15px;
+}
+
+/* =========================
+   BLOGS
+========================= */
+
+.blog-page{
+    padding:60px 20px;
+    text-align:center;
+}
+
+#blog-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.blog-card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.tips-section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.tips-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.tip-card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#4b2e2e;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:2rem;
+}
+
+.coffee-card{
+    flex-direction:column;
+}
+
+.coffee-image,
+.coffee-content,
+.coffee-price{
+    width:100%;
+}
+
+.coffee-price{
+    padding:20px;
+}
+
 }

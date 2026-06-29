@@ -1,12 +1,42 @@
 [
-  {"title":"Coffee Brewing Tips","content":"Learn how to brew perfect coffee at home."},
-  {"title":"Why Espresso is Strong","content":"Understanding espresso extraction."},
-  {"title":"Latte Art Basics","content":"Start your latte art journey."},
-  {"title":"Best Coffee Beans","content":"Choosing premium coffee beans."},
-  {"title":"Healthy Coffee Habits","content":"Drink coffee the healthy way."},
-  {"title":"Cold Brew Guide","content":"Make smooth cold brew easily."},
-  {"title":"Coffee & Productivity","content":"Boost focus with coffee."},
-  {"title":"Arabica vs Robusta","content":"Know the difference."},
-  {"title":"Coffee Storage Tips","content":"Keep beans fresh longer."},
-  {"title":"Top 5 Coffee Drinks","content":"Our customer favorites."}
+  {
+    "title":"Coffee Brewing Tips",
+    "content":"Learn how to brew perfect coffee at home."
+  },
+  {
+    "title":"Why Espresso Is Strong",
+    "content":"Discover why espresso has a rich and intense flavor."
+  },
+  {
+    "title":"Latte Art Basics",
+    "content":"Simple techniques to start your latte art journey."
+  },
+  {
+    "title":"Best Coffee Beans",
+    "content":"Choosing premium coffee beans for maximum flavor."
+  },
+  {
+    "title":"Healthy Coffee Habits",
+    "content":"Ways to enjoy coffee while maintaining balance."
+  },
+  {
+    "title":"Cold Brew Guide",
+    "content":"Make smooth and refreshing cold brew coffee."
+  },
+  {
+    "title":"Coffee And Productivity",
+    "content":"How coffee can help improve focus and concentration."
+  },
+  {
+    "title":"Arabica Vs Robusta",
+    "content":"Understand the key differences between both beans."
+  },
+  {
+    "title":"Coffee Storage Tips",
+    "content":"Keep your coffee fresh for a longer period."
+  },
+  {
+    "title":"Top 5 Coffee Drinks",
+    "content":"The most popular drinks loved by coffee enthusiasts."
+  }
 ]
