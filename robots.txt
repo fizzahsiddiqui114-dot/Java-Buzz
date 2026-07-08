@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap:https://fizzahsiddiqui114-dot.github.io/Java-Buzz/sitemap.xml
