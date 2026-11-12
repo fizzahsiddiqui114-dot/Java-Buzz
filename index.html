@@ -1,93 +1,212 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Java Buzz Coffee Shop</title>
+    <title>Java Buzz Coffee Shop</title>
 
-<meta name="description" content="Java Buzz Coffee Shop - Fresh Coffee, Special Deals & Cozy Moments">
-<meta name="keywords" content="Coffee Shop, Espresso, Latte, Cappuccino, Mocha, Coffee Deals">
-<meta name="author" content="Fizzah Siddiqui">
+    <meta name="description" content="Java Buzz Coffee Shop - Fresh Coffee, Special Deals & Cozy Moments">
+    <meta name="keywords" content="Coffee Shop, Espresso, Latte, Cappuccino, Mocha, Coffee Deals">
+    <meta name="author" content="Fizzah Siddiqui">
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar">
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar sticky">
 
-        <img src="./images/coffee logo (2).png" alt="Java Buzz Logo" class="logo">
+            <a href="index.html" aria-label="Java Buzz Home">
+                <img
+                    src="./images/coffee logo (2).png"
+                    alt="Java Buzz Logo"
+                    class="logo"
+                >
+            </a>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="location.html">Location</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-        </ul>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="menu.html" class="nav-item">Menu</a></li>
+                <li><a href="location.html" class="nav-item">Location</a></li>
+                <li><a href="blogs.html" class="nav-item">Blogs</a></li>
+            </ul>
 
-    </nav>
-</header>
+            <div
+                class="cart-icon"
+                id="cart-count"
+                aria-label="Shopping cart: 0 items"
+                title="Shopping cart: 0 items"
+            >
+                <span class="cart-count-number">0</span>
+            </div>
 
-<section class="hero">
+        </nav>
+    </header>
 
-    <div class="hero-content">
+    <!-- Main Content -->
+    <main>
 
-        <h1>Fresh Coffee. Cozy Vibes.</h1>
+        <!-- Hero Section -->
+        <section
+            class="hero animate-fade-in"
+            aria-label="Java Buzz Coffee Shop"
+        ></section>
 
-        <p>
-            Experience handcrafted coffee made from premium beans.
-            Start your day with the perfect cup.
-        </p>
+        <!-- Featured Coffee -->
+        <section class="featured">
 
-        <a href="menu.html" class="btn">
-            Explore Menu
-        </a>
+            <h2 class="section-title animate-slide-up">
+                Featured Coffee
+            </h2>
 
-    </div>
+            <div class="card-grid">
 
-</section>
+                <article class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80"
+                        alt="Freshly brewed Espresso"
+                        loading="lazy"
+                    >
 
-<section class="welcome">
+                    <h3>Espresso</h3>
+                    <p>$3.00 – Strong, bold, and pure.</p>
 
-    <h2>Welcome To Java Buzz</h2>
+                    <a href="menu.html" class="btn card-btn">
+                        Order Now
+                    </a>
+                </article>
 
-    <p>
-        Java Buzz is your destination for freshly brewed coffee,
-        delicious drinks and unforgettable moments.
-    </p>
+                <article class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80"
+                        alt="Creamy Latte Coffee"
+                        loading="lazy"
+                    >
 
-</section>
+                    <h3>Latte</h3>
+                    <p>$4.00 – Silky milk with a smooth espresso base.</p>
 
-<section class="offers">
+                    <a href="menu.html" class="btn card-btn">
+                        Order Now
+                    </a>
+                </article>
 
-    <h2>Special Offers</h2>
+                <article class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80"
+                        alt="Delicious Cappuccino"
+                        loading="lazy"
+                    >
 
-    <div class="offer-grid">
+                    <h3>Cappuccino</h3>
+                    <p>$4.50 – Dreamy foam on rich espresso.</p>
 
-        <div class="offer-card">
-            <h3>Buy 1 Get 1 Free</h3>
-            <p>Available on all hot coffees every Friday.</p>
+                    <a href="menu.html" class="btn card-btn">
+                        Order Now
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Welcome Section -->
+        <section class="welcome animate-fade-in">
+
+            <h2>Welcome to Java Buzz</h2>
+
+            <p>
+                Our specialty coffee shop blends premium beans
+                with a cozy atmosphere. Enjoy handcrafted drinks,
+                delicious pastries, and a place to unwind.
+            </p>
+
+        </section>
+
+        <!-- About Section -->
+        <section class="about animate-slide-up">
+
+            <h2>About Our Coffee</h2>
+
+            <p>
+                We source beans from sustainable farms, roast them
+                in-house, and craft each cup with care. From espresso
+                to cold brew, every drink is a celebration of flavor.
+            </p>
+
+        </section>
+
+        <!-- Special Offers -->
+        <section class="offers">
+
+            <h2 class="section-title animate-fade-in">
+                Special Offers
+            </h2>
+
+            <div class="offer-grid">
+
+                <article class="offer-card animate-card">
+                    <h3>Buy 1 Get 1 Free</h3>
+                    <p>All hot coffees, every Friday.</p>
+                </article>
+
+                <article class="offer-card animate-card">
+                    <h3>20% Student Discount</h3>
+                    <p>Show your student ID and save.</p>
+                </article>
+
+                <article class="offer-card animate-card">
+                    <h3>Family Deal</h3>
+                    <p>Any 4 drinks for only $15.</p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <p>© 2026 Java Buzz Coffee Shop</p>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Instagram">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png"
+                        alt="Instagram"
+                    >
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/24/733/733547.png"
+                        alt="Facebook"
+                    >
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/24/733/733579.png"
+                        alt="Twitter"
+                    >
+                </a>
+
+            </div>
+
         </div>
 
-        <div class="offer-card">
-            <h3>20% Student Discount</h3>
-            <p>Show your student card and save 20%.</p>
-        </div>
+    </footer>
 
-        <div class="offer-card">
-            <h3>Family Deal</h3>
-            <p>Any 4 drinks for only $15.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<footer>
-    <p>© 2026 Java Buzz Coffee Shop</p>
-</footer>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 </html>

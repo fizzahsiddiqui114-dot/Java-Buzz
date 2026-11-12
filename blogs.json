@@ -1,42 +1,57 @@
+
 [
   {
-    "title":"Coffee Brewing Tips",
-    "content":"Learn how to brew perfect coffee at home."
+    "id": 1,
+    "category": "Coffee Guide",
+    "title": "The Art of Brewing the Perfect Coffee",
+    "date": "November 05, 2026",
+    "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=85",
+    "content": "Discover the secrets of brewing a perfect cup of coffee. From selecting quality beans to choosing the right brewing method, every little detail makes a difference.",
+    "fullContent": "Great coffee starts with quality beans, fresh water and the right brewing temperature. Experiment with different brewing methods to discover the flavor you enjoy most."
   },
   {
-    "title":"Why Espresso Is Strong",
-    "content":"Discover why espresso has a rich and intense flavor."
+    "id": 2,
+    "category": "Coffee Lifestyle",
+    "title": "5 Coffee Drinks Every Coffee Lover Must Try",
+    "date": "November 07, 2026",
+    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85",
+    "content": "From creamy cappuccinos to refreshing iced lattes, explore five delicious coffee drinks that deserve a place on your favorites list.",
+    "fullContent": "Try espresso for a bold flavor, cappuccino for creamy foam, caramel macchiato for sweetness, mocha for chocolate lovers and iced latte for a refreshing experience."
   },
   {
-    "title":"Latte Art Basics",
-    "content":"Simple techniques to start your latte art journey."
+    "id": 3,
+    "category": "Coffee Knowledge",
+    "title": "Why Freshly Ground Coffee Matters",
+    "date": "November 09, 2026",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85",
+    "content": "Freshly ground coffee helps preserve aroma and flavor. Learn why grinding your beans just before brewing can improve your coffee experience.",
+    "fullContent": "Coffee beans gradually lose their aroma after grinding because more surface area is exposed to air. Grinding beans just before brewing helps preserve their natural fragrance and flavor."
   },
   {
-    "title":"Best Coffee Beans",
-    "content":"Choosing premium coffee beans for maximum flavor."
+    "id": 4,
+    "category": "Coffee Art",
+    "title": "The Secret Behind Beautiful Latte Art",
+    "date": "November 10, 2026",
+    "image": "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=900&q=85",
+    "content": "Latte art makes every coffee cup special. Explore the creativity behind beautiful milk patterns and the skill of coffee making.",
+    "fullContent": "Latte art combines espresso preparation with carefully textured milk. Baristas use controlled pouring techniques to create patterns such as hearts, tulips and rosettas."
   },
   {
-    "title":"Healthy Coffee Habits",
-    "content":"Ways to enjoy coffee while maintaining balance."
+    "id": 5,
+    "category": "Cold Coffee",
+    "title": "Cold Brew vs Iced Coffee: What's the Difference?",
+    "date": "November 11, 2026",
+    "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=85",
+    "content": "They both taste refreshing, but cold brew and iced coffee are prepared differently. Discover what makes each drink unique.",
+    "fullContent": "Iced coffee is generally brewed hot and then cooled before serving over ice. Cold brew is prepared by steeping coffee grounds in cold or room-temperature water for an extended period."
   },
   {
-    "title":"Cold Brew Guide",
-    "content":"Make smooth and refreshing cold brew coffee."
-  },
-  {
-    "title":"Coffee And Productivity",
-    "content":"How coffee can help improve focus and concentration."
-  },
-  {
-    "title":"Arabica Vs Robusta",
-    "content":"Understand the key differences between both beans."
-  },
-  {
-    "title":"Coffee Storage Tips",
-    "content":"Keep your coffee fresh for a longer period."
-  },
-  {
-    "title":"Top 5 Coffee Drinks",
-    "content":"The most popular drinks loved by coffee enthusiasts."
+    "id": 6,
+    "category": "Coffee Tips",
+    "title": "How to Choose the Perfect Coffee Beans",
+    "date": "November 12, 2026",
+    "image": "https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&w=900&q=85",
+    "content": "Choosing coffee beans can be confusing. Learn about roast levels, flavor profiles and simple ways to find beans that match your taste.",
+    "fullContent": "Light roasts often highlight brighter and more delicate flavors, medium roasts offer a balanced profile, and dark roasts generally have a deeper, bolder taste. Choose according to your preferred flavor."
   }
 ]

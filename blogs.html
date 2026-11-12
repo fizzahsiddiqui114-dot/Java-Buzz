@@ -1,69 +1,103 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Java Buzz Blogs</title>
+    <title>Java Buzz | Coffee Blogs</title>
 
-<link rel="stylesheet" href="style.css">
+    <meta name="description" content="Explore coffee stories, brewing guides, tips and the latest updates from Java Buzz Coffee Shop.">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar">
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar sticky">
 
-        <img src="./images/coffee-logo.png" alt="Java Buzz Logo" class="logo">
+            <a href="index.html" aria-label="Java Buzz Home">
+                <img
+                    src="./images/coffee logo (2).png"
+                    alt="Java Buzz Logo"
+                    class="logo">
+            </a>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="location.html">Location</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-        </ul>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="menu.html" class="nav-item">Menu</a></li>
+                <li><a href="location.html" class="nav-item">Location</a></li>
+                <li><a href="blogs.html" class="nav-item">Blogs</a></li>
+            </ul>
 
-    </nav>
-</header>
+        </nav>
+    </header>
 
-<section class="blog-page">
+    <!-- Blog Section -->
+    <main>
 
-    <h1>Latest Coffee Blogs</h1>
+        <section class="blog-page">
 
-    <div id="blog-container"></div>
+            <h1 class="section-title animate-slide-up">
+                Latest Coffee Blogs
+            </h1>
 
-</section>
+            <div id="blog-container">
+                <!-- Blogs will be loaded through JavaScript -->
+            </div>
 
-<section class="tips-section">
+        </section>
 
-    <h2>Coffee Tips</h2>
+        <!-- Coffee Tips -->
+        <section class="tips-section">
 
-    <div class="tips-grid">
+            <h2 class="section-title animate-fade-in">
+                Coffee Tips
+            </h2>
 
-        <div class="tip-card">
-            <h3>Fresh Beans</h3>
-            <p>Always use freshly roasted beans for best flavor.</p>
+            <div class="tips-grid">
+
+                <div class="tip-card animate-card">
+                    <h3>Fresh Beans</h3>
+                    <p>
+                        Always use freshly roasted beans
+                        for the best coffee flavor.
+                    </p>
+                </div>
+
+                <div class="tip-card animate-card">
+                    <h3>Store Properly</h3>
+                    <p>
+                        Keep coffee beans in an airtight
+                        container to maintain freshness.
+                    </p>
+                </div>
+
+                <div class="tip-card animate-card">
+                    <h3>Use Filtered Water</h3>
+                    <p>
+                        Quality filtered water makes
+                        a noticeable difference in coffee taste.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Java Buzz Coffee Shop</p>
         </div>
+    </footer>
 
-        <div class="tip-card">
-            <h3>Store Properly</h3>
-            <p>Keep coffee beans in an airtight container.</p>
-        </div>
-
-        <div class="tip-card">
-            <h3>Use Filtered Water</h3>
-            <p>Good water improves coffee taste significantly.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<footer>
-    <p>© 2026 Java Buzz Coffee Shop</p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>

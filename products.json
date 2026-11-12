@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Espresso",
+    "category": "Hot Coffee",
+    "price": 3.00,
+    "description": "A strong bold shot of coffee made from premium beans.",
+    "image": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg",
+    "featured": true,
+    "bestseller": true,
+    "offer": null
+  },
+  {
+    "id": 2,
+    "name": "Latte",
+    "category": "Hot Coffee",
+    "price": 4.00,
+    "description": "Smooth espresso combined with steamed milk.",
+    "image": "https://images.pexels.com/photos/302897/pexels-photo-302897.jpeg",
+    "featured": true,
+    "bestseller": false,
+    "offer": null
+  },
+  {
+    "id": 3,
+    "name": "Cappuccino",
+    "category": "Hot Coffee",
+    "price": 4.50,
+    "description": "Rich espresso with creamy milk and thick foam.",
+    "image": "https://images.pexels.com/photos/374885/pexels-photo-374885.jpeg",
+    "featured": false,
+    "bestseller": true,
+    "offer": null
+  },
+  {
+    "id": 4,
+    "name": "Mocha",
+    "category": "Hot Coffee",
+    "price": 5.00,
+    "description": "Chocolate flavored coffee topped with whipped cream.",
+    "image": "https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg",
+    "featured": false,
+    "bestseller": false,
+    "offer": "Special Offer"
+  },
+  {
+    "id": 5,
+    "name": "Cold Brew",
+    "category": "Cold Coffee",
+    "price": 5.00,
+    "description": "Slow brewed chilled coffee with smooth flavor.",
+    "image": "https://images.pexels.com/photos/2074122/pexels-photo-2074122.jpeg",
+    "featured": false,
+    "bestseller": false,
+    "offer": null
+  },
+  {
+    "id": 6,
+    "name": "Caramel Latte",
+    "category": "Special Drinks",
+    "price": 5.50,
+    "description": "Rich espresso with sweet caramel flavor.",
+    "image": "https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg",
+    "featured": false,
+    "bestseller": false,
+    "offer": "Limited Time"
+  },
+  {
+    "id": 7,
+    "name": "Tea",
+    "category": "Tea",
+    "price": 3.50,
+    "description": "A soothing blend of premium tea leaves.",
+    "image": "https://images.pexels.com/photos/302896/pexels-photo-302896.jpeg",
+    "featured": false,
+    "bestseller": false,
+    "offer": null
+  },
+  {
+    "id": 8,
+    "name": "Cheesecake",
+    "category": "Desserts",
+    "price": 4.75,
+    "description": "Creamy cheesecake with a buttery crust.",
+    "image": "https://images.pexels.com/photos/302891/pexels-photo-302891.jpeg",
+    "featured": false,
+    "bestseller": true,
+    "offer": null
+  }
+]

@@ -1,159 +1,170 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Java Buzz Menu</title>
+    <title>Java Buzz | Coffee Menu</title>
 
-<link rel="stylesheet" href="style.css">
+    <meta name="description" content="Explore the delicious coffee, special drinks and desserts menu at Java Buzz Coffee Shop.">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar">
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar sticky">
 
-        <img src="./images/coffee-logo.png" alt="Java Buzz Logo" class="logo">
+            <a href="index.html" aria-label="Java Buzz Home">
+                <img
+                    src="./images/coffee logo (2).png"
+                    alt="Java Buzz Logo"
+                    class="logo">
+            </a>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="location.html">Location</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-        </ul>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="menu.html" class="nav-item">Menu</a></li>
+                <li><a href="location.html" class="nav-item">Location</a></li>
+                <li><a href="blogs.html" class="nav-item">Blogs</a></li>
+            </ul>
 
-    </nav>
-</header>
+            <div class="cart-icon" id="cart-count" aria-label="Cart items">
+                0
+            </div>
 
-<section class="menu-banner">
-    <h1>Our Coffee Menu</h1>
-    <p>Handcrafted with love, brewed to perfection.</p>
-</section>
+        </nav>
+    </header>
 
-<section class="menu-page">
+    <main>
 
-<div class="coffee-card">
-    <div class="coffee-image espresso"></div>
+        <!-- Menu Banner -->
+        <section class="menu-banner animate-fade-in">
 
-    <div class="coffee-content">
-        <h2>Espresso</h2>
-        <p>A strong bold shot of coffee made from premium beans.</p>
-    </div>
+            <h1>Our Coffee Menu</h1>
 
-    <div class="coffee-price">
-        <h2>$3.00</h2>
-        <button onclick="orderNow('Espresso')">Order Now</button>
-    </div>
-</div>
+            <p>
+                Handcrafted with love, brewed to perfection.
+            </p>
 
-<div class="coffee-card">
-    <div class="coffee-image latte"></div>
+        </section>
 
-    <div class="coffee-content">
-        <h2>Latte</h2>
-        <p>Smooth espresso combined with steamed milk.</p>
-    </div>
+        <!-- Menu Filters -->
+        <section class="menu-filters">
 
-    <div class="coffee-price">
-        <h2>$4.00</h2>
-        <button onclick="orderNow('Latte')">Order Now</button>
-    </div>
-</div>
+            <input
+                type="text"
+                id="search-input"
+                class="search-bar"
+                placeholder="Search your favourite coffee..."
+                aria-label="Search menu items">
 
-<div class="coffee-card">
-    <div class="coffee-image cappuccino"></div>
+            <div class="filter-buttons">
 
-    <div class="coffee-content">
-        <h2>Cappuccino</h2>
-        <p>Rich espresso with creamy milk and thick foam.</p>
-    </div>
+                <button class="filter-btn active" data-category="all">
+                    All
+                </button>
 
-    <div class="coffee-price">
-        <h2>$4.50</h2>
-        <button onclick="orderNow('Cappuccino')">Order Now</button>
-    </div>
-</div>
+                <button class="filter-btn" data-category="Hot Coffee">
+                    Hot Coffee
+                </button>
 
-<div class="coffee-card">
-    <div class="coffee-image mocha"></div>
+                <button class="filter-btn" data-category="Cold Coffee">
+                    Cold Coffee
+                </button>
 
-    <div class="coffee-content">
-        <h2>Mocha</h2>
-        <p>Chocolate flavored coffee topped with whipped cream.</p>
-    </div>
+                <button class="filter-btn" data-category="Special Drinks">
+                    Special Drinks
+                </button>
 
-    <div class="coffee-price">
-        <h2>$5.00</h2>
-        <button onclick="orderNow('Mocha')">Order Now</button>
-    </div>
-</div>
+                <button class="filter-btn" data-category="Desserts">
+                    Desserts
+                </button>
 
-<div class="coffee-card">
-    <div class="coffee-image coldbrew"></div>
+            </div>
 
-    <div class="coffee-content">
-        <h2>Cold Brew</h2>
-        <p>Slow brewed chilled coffee with smooth flavor.</p>
-    </div>
+        </section>
 
-    <div class="coffee-price">
-        <h2>$5.00</h2>
-        <button onclick="orderNow('Cold Brew')">Order Now</button>
-    </div>
-</div>
+        <!-- Product Grid -->
+        <section class="menu-page">
 
-<div class="coffee-card">
-    <div class="coffee-image caramel"></div>
+            <div class="product-grid" id="product-grid">
+                <!-- Products dynamically loaded through script.js -->
+            </div>
 
-    <div class="coffee-content">
-        <h2>Caramel Latte</h2>
-        <p>Rich espresso with sweet caramel flavor.</p>
-    </div>
+        </section>
 
-    <div class="coffee-price">
-        <h2>$5.50</h2>
-        <button onclick="orderNow('Caramel Latte')">Order Now</button>
-    </div>
-</div>
+        <!-- Special Offers -->
+        <section class="offers-section">
 
-</section>
+            <h2 class="section-title">Special Offers</h2>
 
-<section class="offers-section">
+            <div class="offer-grid">
 
-<h1>Special Offers</h1>
+                <div class="offer-card">
+                    <h2>Buy 1 Get 1 Free</h2>
+                    <p>All hot coffees, every Friday.</p>
+                </div>
 
-<div class="offer-grid">
+                <div class="offer-card">
+                    <h2>20% Student Discount</h2>
+                    <p>Show your student ID and save.</p>
+                </div>
 
-<div class="offer-card">
-    <h2>☕ Buy 1 Get 1 Free</h2>
-    <p>Available on all hot coffees every Friday.</p>
-</div>
+                <div class="offer-card">
+                    <h2>Family Deal</h2>
+                    <p>Any 4 drinks for only $15.</p>
+                </div>
 
-<div class="offer-card">
-    <h2>🎓 Student Discount</h2>
-    <p>20% off with valid student ID.</p>
-</div>
+                <div class="offer-card">
+                    <h2>Happy Hour</h2>
+                    <p>3 PM – 6 PM daily on iced drinks.</p>
+                </div>
 
-<div class="offer-card">
-    <h2>👨‍👩‍👧 Family Deal</h2>
-    <p>Any 4 drinks for only $15.</p>
-</div>
+            </div>
 
-<div class="offer-card">
-    <h2>🕒 Happy Hour</h2>
-    <p>3 PM - 6 PM daily on iced drinks.</p>
-</div>
+        </section>
 
-</div>
+    </main>
 
-</section>
+    <!-- Footer -->
+    <footer>
 
-<footer>
-    <p>© 2026 Java Buzz Coffee Shop</p>
-</footer>
+        <div class="footer-content">
 
-<script src="script.js"></script>
+            <p>© 2026 Java Buzz Coffee Shop</p>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Instagram">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png"
+                        alt="Instagram">
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/24/733/733547.png"
+                        alt="Facebook">
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/24/733/733579.png"
+                        alt="Twitter">
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

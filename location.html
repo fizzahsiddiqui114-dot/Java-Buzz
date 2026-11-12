@@ -1,63 +1,106 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Java Buzz Location</title>
+    <title>Java Buzz | Our Location</title>
 
-<link rel="stylesheet" href="style.css">
+    <meta name="description" content="Visit Java Buzz Coffee Shop in Karachi. Explore our location and opening hours.">
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar">
+    <!-- Navbar -->
+    <header>
 
-        <img src="./images/coffee-logo.png" alt="Java Buzz Logo" class="logo">
+        <nav class="navbar sticky">
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="location.html">Location</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-        </ul>
+            <a href="index.html">
+                <img
+                    src="./images/coffee logo (2).png"
+                    alt="Java Buzz Logo"
+                    class="logo">
+            </a>
 
-    </nav>
-</header>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="menu.html" class="nav-item">Menu</a></li>
+                <li><a href="location.html" class="nav-item">Location</a></li>
+                <li><a href="blogs.html" class="nav-item">Blogs</a></li>
+            </ul>
 
-<section class="location-page">
+        </nav>
 
-    <h1>Visit Java Buzz</h1>
+    </header>
 
-    <p>
-        123 Coffee Street, Karachi, Pakistan
-    </p>
 
-    <div id="map"></div>
+    <main>
 
-</section>
+        <!-- Location Section -->
+        <section class="location-page">
 
-<section class="timing-section">
+            <h1 class="section-title animate-slide-up">
+                Visit Java Buzz
+            </h1>
 
-    <h2>Opening Hours</h2>
+            <p>
+                123 Coffee Street, Karachi, Pakistan
+            </p>
 
-    <div class="timing-card">
-        <p>Monday - Friday : 8:00 AM - 10:00 PM</p>
-        <p>Saturday : 9:00 AM - 11:00 PM</p>
-        <p>Sunday : 10:00 AM - 11:00 PM</p>
-    </div>
+            <div id="map"></div>
 
-</section>
+        </section>
 
-<footer>
-    <p>© 2026 Java Buzz Coffee Shop</p>
-</footer>
 
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script src="script.js"></script>
+        <!-- Opening Hours -->
+        <section class="timing-section">
+
+            <h2 class="section-title animate-fade-in">
+                Opening Hours
+            </h2>
+
+            <div class="timing-card">
+
+                <p>Monday - Friday : 8:00 AM - 10:00 PM</p>
+
+                <p>Saturday : 9:00 AM - 11:00 PM</p>
+
+                <p>Sunday : 10:00 AM - 11:00 PM</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+            <p>© 2026 Java Buzz Coffee Shop</p>
+        </div>
+
+    </footer>
+
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 </html>
